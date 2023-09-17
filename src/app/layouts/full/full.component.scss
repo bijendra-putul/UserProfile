@@ -1,0 +1,63 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.ccatext{
+  text-align: center;
+    width: 100%;
+    background: #223aa5;
+    color: #fff;
+    padding: 40px 0;
+}
+.userinfo, .mdc-button__label{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.bell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nameblock{
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.rounded-circle{
+  margin-left: 10px;
+}
+.headingname{
+ @extend .bell;
+ flex-direction: column;
+ margin-right: 40px;
+ align-items: baseline;
+ .hello_text{
+  font-size: 18px;
+  font-weight: 500;
+ }
+ .datetime{
+  font-size: 12px;
+  color: gray;
+ }
+}
+.copyright{
+  bottom: 0;
+  position: fixed;
+  padding-right: 32px;
+  right: 0;
+}

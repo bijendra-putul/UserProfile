@@ -1,0 +1,10 @@
+
+<button (click)= "onclick()" class="arrow" ><mat-icon>arrow_back</mat-icon> Back</button>
+
+<ng-container *ngIf="visible">
+    <app-graphchart  id ="graphblock"></app-graphchart>
+    </ng-container>
+    <div *ngIf="ReadMore === true">
+        <app-product id ="productblock"></app-product>
+    </div>
+

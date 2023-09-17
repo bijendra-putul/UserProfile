@@ -1,0 +1,35 @@
+
+.graph_container{  display: flex;
+  align-items: center;
+  justify-content: space-around;  margin-top: 15px;
+  position: relative;
+
+
+  .heading{position: absolute;
+    font-size: 12px;
+    left: 0;
+    bottom: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;}
+    .meter-left{
+      @extend .heading;
+      left: -170px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .meter-right{
+      @extend .meter-left;
+      left: 170px;
+      font-size: 16px;
+     
+    }
+ }
+
+  #brandingLogo, .loader.default.hide + div{
+    display: none !important;
+  }
+  .graph_container > div{
+    position:relative ;
+  }

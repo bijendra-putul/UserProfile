@@ -1,0 +1,48 @@
+<div class="ScoreCard">
+    <h1 class="score-heading">{{title}}</h1>
+    <div class="search">
+      <mat-form-field appearance="fill">
+        <mat-label>Search</mat-label>
+        <mat-icon matPrefix>search</mat-icon>
+        <input type="text"  matInput placeholder="Type something.." [(ngModel)]="filterBy" (keyup)="filter()">
+    </mat-form-field>
+    </div>
+    
+    <div class="score_box">
+       
+      <mat-grid-list cols="4" rowHeight="7:7" gutterSize="10px">
+       
+        <mat-grid-tile *ngFor="let scoredata of filteredScore" id = "{{ 'score' + scoredata.id }}">
+          <span class="heading_topbg"><img
+            src="./assets/images/{{scoredata.topbg}}"
+            class="d-block"
+            height="50"
+          /></span>
+          <span class="scorevalue">{{this.scoredata.value.value1}}</span>
+          <span *ngIf="scoredata.value.value1?.length > 1">{{this.scoredata.value.value2}}<br/>{{this.scoredata.value.value3}}<br/>{{this.scoredata.value.value4}}</span>
+          <span class="description_title">{{this.scoredata.description}}</span>
+          <span class="arrow_bg"><img
+            src="./assets/images/{{scoredata.bottombg}}"
+            class="d-block"
+            height="25"
+          /></span>
+        </mat-grid-tile>
+      </mat-grid-list>
+  
+        <!-- <li *ngFor="let scoredata of scoreData;" id = "{{ 'score' + scoredata.id }}">
+          <span>{{this.scoredata.topbg}}</span>
+          <span>{{this.scoredata.value}}</span>
+          <span>{{this.scoredata.description[0]}}</span>
+          <span>{{this.scoredata.bottombg}}</span>
+        </li>
+       </ul>
+       <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+       </ul> -->
+       
+    </div>
+</div>
+

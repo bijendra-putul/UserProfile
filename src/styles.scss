@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  app-navbar .docs-navbar, app-navbar .docs-navbar-header, .mat-toolbar {
+    background: #3f51b5;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*******************
+ Topbar
+*******************/
+mat-toolbar {
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.5);
+    &.topbar {
+      padding: 0px 15px;
+    }
+    .navbar-header {
+      text-align: center;
+      .navbar-brand {
+        display: flex;
+        line-height: 18px;
+        align-items: center;
+        .dark-logo {
+          display: none;
+        }
+        b {
+          margin-right: 5px;
+        }
+      }
+    }
+  
+    .profile-pic {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+    }
+  }
+  /*******************
+   Topbar
+  *******************/
+  .topbar {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .example-sidenav-container {
+    flex: 1;
+  }
+  
+  .example-sidenav-container {
+    flex: 1 0 auto;
+  }
+  

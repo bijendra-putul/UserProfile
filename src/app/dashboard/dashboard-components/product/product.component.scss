@@ -1,0 +1,48 @@
+.table-responsive {
+  overflow-x: auto;
+}
+
+td.mat-cell {
+  padding: 16px;
+}
+
+th.mat-header-cell:first-of-type,
+td.mat-cell:first-of-type,
+td.mat-footer-cell:first-of-type {
+  padding: 16px;
+}
+
+th.mat-header-cell {
+  padding: 16px;
+}
+
+.mat-header-cell {
+  font-size: 14px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-mdc-table .mdc-data-table__header-row{
+  background: #223aa5 !important;
+  
+}
+.mat-mdc-table .mdc-data-table__header-row th{
+  color: #fff !important;
+}
+.arrow{
+  display: flex;
+}
+
+.mat-focused .mat-form-field-label {
+  color: green !important;
+  font-size: 20px;
+} 
+.billabel{
+  margin-top: 30px;
+}
+
+.headingdetail{
+ @extend .arrow;
+ align-items: center;
+
+}

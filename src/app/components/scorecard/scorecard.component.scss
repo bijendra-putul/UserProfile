@@ -1,0 +1,84 @@
+.example-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.ScoreCard{
+  .search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  h1{
+    background-color: #431061;
+    font-family: 44px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  .score_box{
+    padding: 10px 5px;
+    ul{ 
+      
+      li{
+ background-color: #f1f1f1;
+  width: 25%;
+  margin:0 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  float: left;
+      }
+    }
+  .description_title{
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    padding: 4px 4px 0px 4px;
+  }
+  .heading_topbg{
+    padding:10px 0 ;
+  }
+  .arrow_bg{
+    position: relative;
+    bottom: -20px;
+  }
+  .scorevalue{
+    font-size: 37px;
+  }
+  }
+  
+}
+
+
+
+#score1{
+  background:#13abdc;
+}
+#score2{
+  background:#92d14f;
+}
+#score3{
+  background:#18b8b8;
+}
+#score4{
+  background:#01ae4e;
+}
+#score5{
+  background:#18b8b8;
+}
+#score6{
+  background:#00af50;
+}
+#score7{
+  background:#ed7d31;
+}
+#score8{
+  background:#92d14f;
+}
+
+#score6{
+  .scorevalue{
+    font-size: 16px;
+  }
+}

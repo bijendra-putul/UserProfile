@@ -1,0 +1,42 @@
+
+
+<mat-card class="matcontainer">
+  <div class="round"></div>
+  <mat-list>
+    <mat-list-item  class="cca_cainter">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="account_circle" class="circle_icon"></mat-icon>
+      <div matListItemTitle class="cca_logo">CCA Cockpit</div>
+      <div matListItemLine class="power_by">Power by ETAP</div>
+    </mat-list-item>
+  </mat-list>
+<div *ngIf="islogeedValue; else isLoogedOut" [ngClass]="{
+'sizeup':islogeedValue}">
+  <div class="logout_text">
+    <h2>You have successfully Logged out, <br> Thank You !
+    </h2>
+    <button mat-stroked-button color  (click)="goBack()" class="gobackbutton">Go Back To Login</button>
+  </div>
+</div>
+<ng-template #isLoogedOut>
+<form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+  <mat-card-content class="loginscreen">
+  <p>
+    <mat-form-field>
+      <input type="text" matInput placeholder="username" name="username" formControlName="username">
+    </mat-form-field>
+  </p>
+    
+    <mat-form-field>
+      <input type="password" matInput placeholder="password" name="password" formControlName="password">
+    </mat-form-field>
+ 
+  <p *ngIf="invalidCredentialMsg" class="error">
+    {{invalidCredentialMsg}}
+  </p>
+  <div class="button">
+    <button type="submit" mat-button mat-stroked-button color="primary">Login</button>
+  </div>
+</mat-card-content>
+</form>
+</ng-template>
+</mat-card>

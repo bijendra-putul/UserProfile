@@ -1,0 +1,96 @@
+
+:host {
+    display: flex;
+    justify-content: center;
+    background: #690668;
+    height: 100%;
+  }
+  
+  .cca_logo{
+    text-align: right;
+    font-size: 43px;
+    padding-bottom: 7px;
+    color: #fff;
+  }
+.power_by{
+  text-align: right;
+  font-size: 18px;
+  color: #fff;
+}
+.cca_cainter{       margin-bottom: 44px;
+  margin-top: 29px;
+  height: 71px !important;
+}
+.circle_icon{
+  position: absolute;
+  top: 0;
+  width: 86px;
+  font-size: 81px;
+  height: 109px;
+  color: #fff;
+  left: 32px;
+  top: -3px;
+}
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: #690668 !important;
+}
+  .matcontainer{
+    background: #fff;
+    margin: 100px;
+    
+    height: 407px;
+
+  }
+  .round{
+    background: #690668;
+    width: 557px;
+    height: 200px;
+    float: left;
+    left: -5px;
+    position: absolute;
+    border-radius: 100px;
+    top: -68px;
+  }
+  .loginscreen{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .mat-form-field {
+    width: 100%;
+    max-width: 700px;
+  }
+  .mat-mdc-form-field{
+    width: 100% !important;
+  }
+  mat-card-title,
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .error {
+    padding: 8px;
+    color: white;
+    background-color: red;
+  }
+
+  .button {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .logout_text{padding: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;}
+    .gobackbutton{
+      border: 2px solid #000;
+    text-align: center;
+    margin-top: 22px;
+    font-size: 17px;
+    color: #0b26e2;
+    text-decoration: underline;
+    }

@@ -1,0 +1,9 @@
+<mat-form-field class="billabel">
+    <mat-label>All MU's</mat-label>
+    <mat-select [(ngModel)]="selectedValue" (ngModelChange)="onSelectChange()">
+      <mat-option *ngFor="let mu of mus" [value]="mu.value">
+        {{mu.viewValue}}
+      </mat-option>
+    </mat-select>
+</mat-form-field>
+<!-- <p>You selected: {{selectedValue}}</p> -->
